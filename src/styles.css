@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Structured style modules */
+@import "./styles/theme.css";
+@import "./styles/base.css";
+@import "./styles/animations.css";
+@import "./styles/utilities.css";
+@import "./styles/components/buttons.css";
+@import "./styles/components/header-buttons.css";

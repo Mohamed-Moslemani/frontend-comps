@@ -1,0 +1,17 @@
+@theme {
+  --color-burgundy-50: #fef2f4;
+  --color-burgundy-100: #fde6ea;
+  --color-burgundy-200: #faccda;
+  --color-burgundy-300: #f7a1ba;
+  --color-burgundy-400: #f26995;
+  --color-burgundy-500: #e63870;
+  --color-burgundy-600: #d01f5a;
+  --color-burgundy-700: #A22020;
+  --color-burgundy-800: #7A1530;
+  --color-burgundy-900: #5c1024;
+  --color-burgundy: #A22020;
+  --color-burgundy-dark: #7A1530;
+  --color-burgundy-light: #d01f5a;
+}
+
+@variant dark (&:where(.dark, .dark *));

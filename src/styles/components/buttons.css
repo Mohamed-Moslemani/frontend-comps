@@ -1,0 +1,10 @@
+/* Base button styles */
+.btn { display: grid; place-items: center; border: none; border-radius: 0.75rem; cursor: pointer; transition: transform 150ms ease, box-shadow 200ms ease, filter 200ms ease, opacity 200ms ease; flex-shrink: 0; }
+.btn-icon { width: 2.5rem; height: 2.5rem; }
+
+/* Send button variant */
+.btn-send { background-color: var(--color-burgundy-700); color: white; box-shadow: 0 8px 20px rgba(162, 32, 32, 0.3); }
+.btn-send:hover { box-shadow: 0 10px 28px rgba(162, 32, 32, 0.4); transform: scale(1.10); filter: brightness(1.08); }
+.btn-send:active { transform: scale(0.95); }
+.btn-send:disabled { background-color: #a3a3a3; cursor: not-allowed; opacity: 0.5; box-shadow: none; transform: none; }
+.dark .btn-send:disabled { background-color: #3f3f46; }

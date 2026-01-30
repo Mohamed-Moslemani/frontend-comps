@@ -1,0 +1,17 @@
+src/
+.git/
+.gitignore
+node_modules/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+vite.config.js
+README.md
+.DS_Store
+*.swp
+*.swo
+*~
