@@ -15,5 +15,10 @@ export { default as ThemeToggleButton } from './components/common/ThemeToggleBut
 export { default as CopyButton } from './components/common/CopyButton.jsx';
 export { default as DownloadButton } from './components/common/DownloadButton.jsx';
 
+// Authentication
+export { default as AuthGate } from './components/authentication/AuthGate.jsx';
+export { AuthProvider, useAuth } from './components/authentication/AuthProvider.jsx';
+export { createMsalConfig, createLoginRequest, defaultLoginRequest } from './components/authentication/msalconfig.jsx';
+
 // Hooks
 // export { useTheme } from './hooks/useTheme.js';

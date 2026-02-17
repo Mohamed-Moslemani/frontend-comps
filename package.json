@@ -1,6 +1,6 @@
 {
   "name": "frontend-comps",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": false,
   "type": "module",
   "description": "Reusable frontend UI components library.",
@@ -26,9 +26,15 @@
     "url": "git+https://github.com/pwc-me-adv-strategyand/Strategy_Front.git"
   },
   "peerDependencies": {
+    "@azure/msal-browser": ">=3",
+    "@azure/msal-react": ">=2",
     "lucide-react": ">=0.460.0",
     "react": ">=18 <20",
     "react-router-dom": ">=6"
+  },
+  "peerDependenciesMeta": {
+    "@azure/msal-browser": { "optional": true },
+    "@azure/msal-react": { "optional": true }
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
