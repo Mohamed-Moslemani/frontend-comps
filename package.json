@@ -1,6 +1,6 @@
 {
   "name": "frontend-comps",
-  "version": "0.1.4",
+  "version": "0.2.2",
   "private": false,
   "type": "module",
   "description": "Reusable frontend UI components library.",
@@ -11,7 +11,7 @@
       "import": "./dist/frontend-comps.es.js",
       "require": "./dist/frontend-comps.cjs.js"
     },
-    "./styles.css": "./dist/style.css"
+    "./styles.css": "./dist/frontend-comps.css"
   },
   "files": [
     "dist"
@@ -26,17 +26,14 @@
     "url": "git+https://github.com/pwc-me-adv-strategyand/Strategy_Front.git"
   },
   "peerDependencies": {
+    "lucide-react": ">=0.460.0",
     "react": ">=18 <20",
-    "react-dom": ">=18 <20",
     "react-router-dom": ">=6"
-  },
-  "dependencies": {
-    "lucide-react": "^0.562.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.11",
-    "tailwindcss": "^4.1.18"
+    "@vitejs/plugin-react": "^5.1.4",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.1"
   }
 }

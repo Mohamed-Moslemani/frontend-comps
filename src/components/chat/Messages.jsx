@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Bot } from 'lucide-react';
 import Message from './Message';
 
-function Messages({ messages, loading, assistantName = 'Agent' }) {
+function Messages({ messages, loading, assistantName = 'Agent', onDownloadExcel }) {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function Messages({ messages, loading, assistantName = 'Agent' }) {
   return (
     <div className="flex-1 overflow-y-auto px-8 py-10 flex flex-col gap-8 scroll-smooth bg-gradient-to-br from-white via-burgundy-50/30 to-white dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950">
       {messages.map((m) => (
-        <Message key={m.id} message={m} assistantName={assistantName} />
+        <Message key={m.id} message={m} assistantName={assistantName} onDownloadExcel={onDownloadExcel} />
       ))}
 
       {loading && (
