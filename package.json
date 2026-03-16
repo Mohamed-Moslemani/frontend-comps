@@ -1,6 +1,6 @@
 {
   "name": "frontend-comps",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": false,
   "type": "module",
   "description": "Reusable frontend UI components library.",
@@ -33,8 +33,12 @@
     "react-router-dom": ">=6"
   },
   "peerDependenciesMeta": {
-    "@azure/msal-browser": { "optional": true },
-    "@azure/msal-react": { "optional": true }
+    "@azure/msal-browser": {
+      "optional": true
+    },
+    "@azure/msal-react": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
