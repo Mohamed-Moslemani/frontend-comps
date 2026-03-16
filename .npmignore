@@ -1,4 +1,10 @@
-src/
+src/components/
+src/index.js
+src/styles.css
+src/styles/base.css
+src/styles/animations.css
+src/styles/utilities.css
+src/styles/components/
 .git/
 .gitignore
 node_modules/

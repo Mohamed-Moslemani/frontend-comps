@@ -1,10 +1,10 @@
 /* Smooth scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #e0e0e0; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #a3a3a3; }
-.dark ::-webkit-scrollbar-thumb { background: #404040; }
-.dark ::-webkit-scrollbar-thumb:hover { background: #525252; }
+::-webkit-scrollbar-thumb { background: var(--color-zinc-300); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-zinc-400); }
+.dark ::-webkit-scrollbar-thumb { background: var(--color-zinc-700); }
+.dark ::-webkit-scrollbar-thumb:hover { background: var(--color-zinc-600); }
 
 /* Smooth transitions */
 * { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }

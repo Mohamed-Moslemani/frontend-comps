@@ -35,7 +35,7 @@ function InputBar({
     <form onSubmit={onSubmit} className="px-6 py-5 bg-white dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 sticky bottom-0 max-w-4xl mx-auto w-full backdrop-blur-sm">
       <FilesPreview files={uploadedFiles} onRemoveFile={onRemoveFile} fileLoading={fileLoading} />
 
-      <div className="flex items-end gap-2.5 bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 rounded-3xl px-4 py-3 transition-all duration-300 shadow-sm hover:shadow-md focus-within:border-[#A22020] dark:focus-within:border-[#A22020] focus-within:shadow-lg">
+      <div className="flex items-end gap-2.5 bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-700 rounded-3xl px-4 py-3 transition-all duration-300 shadow-sm hover:shadow-md focus-within:border-brand dark:focus-within:border-brand focus-within:shadow-lg">
         <input
           type="file"
           ref={fileInputRef}
@@ -47,7 +47,7 @@ function InputBar({
         <button
           type="button"
           onClick={() => fileInputRef.current?.click()}
-          className="w-10 h-10 bg-transparent text-zinc-500 dark:text-zinc-400 rounded-xl grid place-items-center cursor-pointer transition-all duration-300 flex-shrink-0 hover:bg-white/50 dark:hover:bg-zinc-800 hover:text-[#A22020] dark:hover:text-[#A22020] hover:scale-110 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:scale-100"
+          className="w-10 h-10 bg-transparent text-zinc-500 dark:text-zinc-400 rounded-xl grid place-items-center cursor-pointer transition-all duration-300 flex-shrink-0 hover:bg-white/50 dark:hover:bg-zinc-800 hover:text-brand dark:hover:text-brand hover:scale-110 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:scale-100"
           disabled={loading || fileLoading}
           title="Attach file"
         >

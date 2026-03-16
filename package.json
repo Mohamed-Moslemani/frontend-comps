@@ -1,6 +1,6 @@
 {
   "name": "frontend-comps",
-  "version": "0.2.4",
+  "version": "0.3.3",
   "private": false,
   "type": "module",
   "description": "Reusable frontend UI components library.",
@@ -11,10 +11,16 @@
       "import": "./dist/frontend-comps.es.js",
       "require": "./dist/frontend-comps.cjs.js"
     },
-    "./styles.css": "./dist/frontend-comps.css"
+    "./styles.css": "./dist/frontend-comps.css",
+    "./tokens": {
+      "style": "./src/styles/theme.css",
+      "default": "./src/styles/theme.css"
+    },
+    "./src/styles/theme.css": "./src/styles/theme.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/styles/theme.css"
   ],
   "scripts": {
     "build": "vite build",

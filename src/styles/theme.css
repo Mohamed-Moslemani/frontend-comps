@@ -1,5 +1,6 @@
 @theme {
-  --color-burgundy-50: #fef2f4;
+  /* === Brand (Burgundy) Palette === */
+  --color-burgundy-50:  #fef2f4;
   --color-burgundy-100: #fde6ea;
   --color-burgundy-200: #faccda;
   --color-burgundy-300: #f7a1ba;
@@ -9,9 +10,11 @@
   --color-burgundy-700: #A22020;
   --color-burgundy-800: #7A1530;
   --color-burgundy-900: #5c1024;
-  --color-burgundy: #A22020;
-  --color-burgundy-dark: #7A1530;
-  --color-burgundy-light: #d01f5a;
+  /* === Semantic Brand Aliases === */
+  --color-brand:        var(--color-burgundy-700);
+  --color-brand-hover:  var(--color-burgundy-600);
+  --color-brand-light:  var(--color-burgundy-50);
+  --color-brand-accent: var(--color-burgundy-400);
+  --color-brand-dark:   var(--color-burgundy-500);
 }
-
 @variant dark (&:where(.dark, .dark *));

@@ -17,10 +17,10 @@ function Message({ message, assistantName = 'Agent', onDownloadExcel }) {
     const rows = lines.slice(1).map(line => line.split('\t'));
     
     return (
-      <div className="overflow-x-auto rounded-lg border border-[#A22020]/30 dark:border-[#A22020] shadow-md">
+      <div className="overflow-x-auto rounded-lg border border-brand/30 dark:border-brand shadow-md">
         <table className="w-full border-collapse bg-white dark:bg-zinc-900 text-sm">
           <thead>
-            <tr className="bg-[#A22020]">
+            <tr className="bg-brand">
               {headers.map((header, i) => (
                 <th 
                   key={i} 
@@ -35,7 +35,7 @@ function Message({ message, assistantName = 'Agent', onDownloadExcel }) {
             {rows.map((row, i) => (
               <tr 
                 key={i} 
-                className="border-b border-zinc-200 dark:border-zinc-800 last:border-b-0 hover:bg-[#A22020]/5 dark:hover:bg-[#A22020]/10 transition-colors"
+                className="border-b border-zinc-200 dark:border-zinc-800 last:border-b-0 hover:bg-brand/5 dark:hover:bg-brand/10 transition-colors"
               >
                 {row.map((cell, j) => (
                   <td 
@@ -57,7 +57,7 @@ function Message({ message, assistantName = 'Agent', onDownloadExcel }) {
       className={`flex gap-3 items-start max-w-full animate-slide-in ${message.role === 'system' ? 'justify-center' : ''}`}
     >
       {message.role !== 'system' && (
-        <div className={`w-10 h-10 rounded-full grid place-items-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110 bg-[#A22020] text-white`}>
+        <div className={`w-10 h-10 rounded-full grid place-items-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110 bg-brand text-white`}>
           {message.role === 'user' ? (
             <User size={20} strokeWidth={2.5} />
           ) : (

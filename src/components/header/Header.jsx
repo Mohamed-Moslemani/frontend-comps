@@ -1,6 +1,6 @@
 function Header({ logoUrl, brandName = 'Strategy&', appTitle = 'Invoice Intelligence', leftActions, rightActions }) {
   return (
-    <header className="bg-[#A22020] px-8 py-3.5 border-b border-white/10 flex justify-between items-center sticky top-0 z-50 shadow-lg backdrop-blur-sm">
+    <header className="bg-brand px-8 py-3.5 border-b border-white/10 flex justify-between items-center sticky top-0 z-50 shadow-lg backdrop-blur-sm">
       <div className="flex items-center gap-6 animate-fade-in">
         <div className="flex items-center gap-3">
           {logoUrl ? (
